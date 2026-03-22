@@ -1,0 +1,182 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background:#292929;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('/fotos/drs.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background:#b8076e;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 40px 20px;
+      background: white;
+    }
+
+    .services-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .services-img {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .services-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .services-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 20px;
+    }
+
+    /* CARDS RESPONSIVOS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 30px;
+      justify-content: center;
+    }
+
+    .card {
+      padding: 5px;
+      text-align: center;
+    }
+
+    .card p {
+      position: relative;
+      padding-left: 15px;
+    }
+
+    .card p::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: black;
+      font-size: 18px;
+    }
+
+    /* IMPACTO */
+    .impacto{
+        text-align: center;
+        padding: 60px 20px;
+        background-color:#b8076e;
+        color:#f5f7fa;
+    }
+
+    .impacto h1{
+      font-size: 1.4rem;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background: #292929;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* 📱 RESPONSIVIDADE */
+    @media (max-width: 768px) {
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .services-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .impacto h1 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+    }
